@@ -1,2 +1,2 @@
-# fsc-etherium
+# fsc-ethereum
 fsc
