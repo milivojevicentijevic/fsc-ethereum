@@ -399,7 +399,7 @@ today
 explore
 *************/
 .explore {
-    padding: 80px 50px;
+    padding: 80px 60px;
 }
 .explore a {
     flex: 0 0 32%;
@@ -409,4 +409,62 @@ explore
 }
 .explore h2 {
     width: 100%;
+    padding-bottom: 60px;
+}
+/*************
+contribute
+*************/
+.contribute {
+    background: linear-gradient(60deg, var(--gray),var(--gray),var(--gray), var(--lightblue));
+}
+.contribute article:first-child {
+    flex: 0 0 54%;
+    padding: 50px 100px;
+}
+.contribute article:last-child {
+    flex: 0 0 42%;
+}
+.contribute img {
+    width: 95%;
+}
+.contribute p {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+/*************
+footer
+*************/
+footer {
+    padding: var(--padding);
+}
+footer article:first-child {
+    margin-top: 50px;
+}
+footer article:first-child p:first-child {
+    font-size: .95rem;
+}
+footer article:first-child a {
+    color: #b2b2b2;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+footer article:last-child {
+    margin-top: 30px;
+    align-items: flex-start;
+}
+footer article:last-child a {
+    text-decoration: none;
+    color: var(--text);
+    line-height: 2.5;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+footer article:last-child h5 {
+    font-size: .9rem;
+    line-height: 2.5;
+}
+footer article:last-child a:hover {
+    color: var(--blue);
 }
