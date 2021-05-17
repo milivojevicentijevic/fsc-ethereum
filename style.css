@@ -93,6 +93,7 @@ h2 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 30px;
+    line-height: 1.2;
 }
 /************************
 nav
@@ -467,4 +468,88 @@ footer article:last-child h5 {
 }
 footer article:last-child a:hover {
     color: var(--blue);
+}
+/*************
+RESPONSIVE
+*************/
+@media (max-width:767px) {
+    .flexBetween {
+        flex-direction: column;
+    }
+    nav.flexBetween, nav ul.flexBetween,
+    nav article.flexBetween {
+        flex-direction: row;
+    }
+    nav ul li {
+        margin-left: 0;
+    }
+    .listItem {
+        display: none;
+    }
+    nav .fa-sun, nav .languages , nav input {
+        display: none;
+    }
+    nav ul img {
+        padding-left: 25px;
+    }
+    .welcome h1 {
+        font-size: 2rem;
+    }
+    .getStarted article:first-child {
+        padding: 20px;
+    }
+    .cards {
+        padding: 20px;
+    }
+    .colors:nth-child(odd) .text {
+        order: 0;
+    }
+    .colors .img {
+        padding-left: 0;
+    }
+    .colors .text {
+        padding: 20px;
+    }
+    .gray article:first-child {
+        flex: 0 0 90%;
+    }
+    .gray article:last-child {
+        flex: 0 0 100%;
+        padding: 50px 20px 0;
+    }
+    .colors.gray .img {
+        margin: auto;
+    }
+    .today {
+        padding: 60px 0;
+    }
+    .today h2, .today h2 + p {
+        margin-left: 20px;
+    }
+    .explore {
+        padding: 60px 20px;
+    }
+    .today article div {
+        width: 100%;
+    }
+    .explore h2 {
+        padding-bottom: 20px;
+    }
+    .contribute article:first-child {
+        flex: 0 0 100%;
+        padding: 60px 20px;
+    }
+    .contribute article:last-child {
+        flex: 0 0 100%;
+    }
+    footer article:first-child p + p {
+        margin-top: 20px;
+    }
+    footer article:last-child {
+        padding: 0 20px;
+    }
+    .btnBlue {
+        margin-bottom: 15px;
+    }
+
 }
